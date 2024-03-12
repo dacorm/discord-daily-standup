@@ -1,4 +1,9 @@
 .input {
     background-color: transparent;
-    border: none;
+    border: .05em solid var(--primary-border);
+}
+
+.text {
+    margin: 0 0 2px 0;
+    font-size: 13px;
 }

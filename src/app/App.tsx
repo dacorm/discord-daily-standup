@@ -1,32 +1,4 @@
-import { ChangeEvent, useState } from 'react';
-import { Input, Select, SelectOption } from '../shared/ui';
+import { StandupForm } from '../features/standup-form';
+import styles from './App.module.css';
 
-const options = [
-    { label: 'Дон Кихот', value: 1 },
-    { label: 'Колесо', value: 2 },
-    { label: 'Ортодо', value: 3 },
-    { label: 'Платья', value: 4 },
-    { label: 'Агенты', value: 5 },
-];
-
-export const App = () => {
-    const [value, setValue] = useState('');
-    const [selectValue, setSelectValue] = useState<SelectOption[]>([]);
-
-    const handleValueChange = (e: ChangeEvent<HTMLInputElement>) => {
-        setValue(e.target.value);
-    };
-
-    return (
-        <>
-            <Select
-                multiple
-                options={options}
-                value={selectValue}
-                onChange={setSelectValue}
-            />
-            <Input onChange={handleValueChange} value={value} />
-
-        </>
-    );
-};
+export const App = () => (<div className={styles.app}><StandupForm /></div>);

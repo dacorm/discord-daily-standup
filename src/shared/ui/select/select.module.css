@@ -2,7 +2,7 @@
     position: relative;
     width: 20em;
     min-height: 1.5em;
-    border: .05em solid #777;
+    border: .05em solid var(--primary-border);
     display: flex;
     align-items: center;
     gap: .5em;
@@ -24,7 +24,7 @@
 
 .clear-btn {
     background: none;
-    color: #777;
+    color: var(--primary-border);
     border: none;
     outline: none;
     cursor: pointer;
@@ -38,7 +38,7 @@
 }
 
 .divider {
-    background-color: #777;
+    background-color: var(--primary-border);
     align-self: stretch;
     width: .05em;
 }
@@ -46,7 +46,7 @@
 .caret {
     translate: 0 25%;
     border: .25em solid transparent;
-    border-top-color: #777;
+    border-top-color: var(--primary-border);
 }
 
 .options {
@@ -57,7 +57,7 @@
     display: none;
     max-height: 15em;
     overflow-y: auto;
-    border: .05em solid #777;
+    border: .05em solid var(--primary-border);
     border-radius: .25em;
     width: 100%;
     left: 0;
@@ -87,7 +87,7 @@
 .option-badge {
     display: flex;
     align-items: center;
-    border: .05em solid #777;
+    border: .05em solid var(--primary-border);
     border-radius: .25em;
     padding: .15em .25em;
     gap: .25em;
@@ -109,5 +109,10 @@
 
 .option-badge > .remove-btn {
     font-size: 1.25em;
-    color: #777;
+    color: var(--primary-border);
+}
+
+.text {
+    margin: 0 0 2px 0;
+    font-size: 13px;
 }
